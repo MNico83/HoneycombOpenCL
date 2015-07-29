@@ -70,16 +70,16 @@ private:
   // cpu array storing pixel colors
   std::vector<int> m_Tab2D;
 
-  GLuint tex = 0;
-  int imWidth = 0;
-  int imHeight = 0;
+  GLuint tex ;
+  int imWidth ;
+  int imHeight ;
 
   // opencl data
-  cl_kernel m_KernelCopyIntoTexture = 0 /*transform integer into rgba color*/, m_KernelIteration = 0 /*compute new color from previous data*/, m_KernelCopyIntoTextureBasic = 0 /**/;
+  cl_kernel m_KernelCopyIntoTexture /*transform integer into rgba color*/, m_KernelIteration /*compute new color from previous data*/, m_KernelCopyIntoTextureBasic /**/;
   cl_mem cl_tex_mem;
-  cl_context clcontext = 0;
-  cl_command_queue commandQueue = 0;
-  cl_program program = 0;
+  cl_context clcontext ;
+  cl_command_queue commandQueue ;
+  cl_program program ;
 
   cl_mem m_GPUTab2D; /*2D Array of integers that represent colors*/
   cl_mem m_GPUTabNbPixelByColor, m_GPUTabNbPixelByColorInitial;

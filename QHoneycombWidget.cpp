@@ -35,6 +35,13 @@ QHoneycombWidget::QHoneycombWidget(QWidget *parent)
   imHeight = DefaultimHeight;
   //
   m_RunKernel = false;
+
+  tex = 0;
+  m_KernelCopyIntoTexture = m_KernelIteration = m_KernelCopyIntoTextureBasic = 0;
+  cl_tex_mem = 0;
+  clcontext = 0;
+  commandQueue = 0;
+  program = 0;
 }
 
 QHoneycombWidget::~QHoneycombWidget()
