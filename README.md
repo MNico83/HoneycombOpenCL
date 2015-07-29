@@ -1,5 +1,5 @@
 # HoneycombOpenCL
-###Some graphic experiments on the [Honeycom theorem](https://en.wikipedia.org/wiki/Honeycomb_conjecture). 
+###Some graphic experiments on the [Honeycomb theorem](https://en.wikipedia.org/wiki/Honeycomb_conjecture). 
 
 The plane is restricted to a square, discretized into a 2D grid of pixels. A small iterative routine modifies the color of each pixel so that the boundary of each colored shape is "locally" minimal. The global minimum is reach for a regular tiling os hexagons, but the routine sometimes reaches a local minimum, which contains other kind of polygons...
 
